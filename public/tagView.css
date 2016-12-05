@@ -1,0 +1,96 @@
+.tag-view-page-content {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 53px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 16px 0;
+    background-color: #f5f5f5;
+    -webkit-overflow-scrolling: touch;
+}
+.tag-view-tag-container {
+    margin-bottom: 12px;
+    text-align: center;
+}
+.tag-view-section-title {
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+.tag-view-playlists-container {
+    margin-bottom: 24px;
+}
+.tag-view-playlist-cell {
+    position: relative;
+    padding: 12px 12px;
+    background-color: #fff;
+}
+.tag-view-playlist-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 12px;
+    display: block;
+    height: 1px;
+    content: '';
+    background-color: #aaa;
+}
+.tag-view-playlists-container .tag-view-playlist-cell:last-child:after {
+    height: 0;
+}
+.tag-view-playlist-cell-action-button {
+    width: 22px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+#tag-view-assigned-playlists-container .tag-view-playlist-cell-action-button {
+    content: url('assets/ic_delete.png');
+}
+#tag-view-unassigned-playlists-container .tag-view-playlist-cell-action-button {
+    content: url('assets/ic_add.png');
+}
+.tag-view-playlist-cell-thumbnail {
+    width: 36px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.tag-view-playlist-cell-text-container {
+    display: inline-block;
+    max-width: calc(100% - 110px);
+    vertical-align: middle;
+}
+.tag-view-playlist-cell-title {
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tag-view-playlist-cell-subtitle {
+    line-height: 21px;
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 21px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.delete-tag-cell {
+    display: block;
+    margin-bottom: 24px;
+    padding: 8px 12px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #fe3824;
+    background-color: #fff;
+
+    transition: background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+}
+.delete-tag-cell.confirmed {
+    color: #fff;
+    background-color: #fe3824;
+}
+

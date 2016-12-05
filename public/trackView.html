@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta content="initial-scale=1.0" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.1/lodash.min.js"></script>
+    <script type="text/javascript" src="trackView.js"></script>
+    <script type="text/javascript" src="myUtil.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="trackView.css">
+    <title></title>
+</head>
+
+<body onload="onloadWindow()">
+    <div class="playlist-page-content">
+        <div id="track-cover" class="playlist-cover">
+        </div>
+        <label id="track-title" class="playlist-title">&nbsp</label>
+        <label id="track-subtitle" class="playlist-subtitle">&nbsp</label>
+        <a class="spotify-button spotifyButton">
+        </a>
+        <div class="rating-container ratingContainer">
+            <img class="rating-star" onclick="rate(1)" />
+            <img class="rating-star" onclick="rate(2)" />
+            <img class="rating-star" onclick="rate(3)" />
+            <img class="rating-star" onclick="rate(4)" />
+            <img class="rating-star" onclick="rate(5)" />
+            <!-- Preload images -->
+            <img style="width: 0; content: url('assets/playlist_star_unrated.png');" />
+            <img style="width: 0; content: url('assets/playlist_star_unselected.png');" />
+            <img style="width: 0; content: url('assets/playlist_star_selected.png');" />
+        </div>
+        <label class="section-title playlist-section-title">Tags</label>
+        <div class="playlist-tag-container playlistTagContainer">
+            <!-- Tag bubble cells go here-->
+        </div>
+    </div>
+    <div class="myNgInclude" my-ng-include="bottomBar.html"></div>
+</body>
+
+</html>
+<!-- Tag bubble cell template -->
+<template id="track-viewtag-cell-template">
+    <div class="tag-cell-bubble playlist-tag-cell playlistTagCell" onclick="onclickTag(this)"></div>
+</template>

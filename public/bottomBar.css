@@ -1,0 +1,58 @@
+.bottom-bar {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.bottom-bar-cell {
+    display: table-cell;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+#bottom-bar-cell-tags .bottom-bar-cell-icon {
+    content: url('assets/bottom_tag.png');
+}
+#bottom-bar-cell-tags.is-selected .bottom-bar-cell-icon {
+    content: url('assets/bottom_tag_selected.png');
+}
+#bottom-bar-cell-ratings .bottom-bar-cell-icon {
+    content: url('assets/bottom_rating.png');
+}
+#bottom-bar-cell-ratings.is-selected .bottom-bar-cell-icon {
+    content: url('assets/bottom_rating_selected.png');
+}
+#bottom-bar-cell-search .bottom-bar-cell-icon {
+    content: url('assets/bottom_search.png');
+}
+#bottom-bar-cell-search.is-selected .bottom-bar-cell-icon {
+    content: url('assets/bottom_search_selected.png');
+}
+#bottom-bar-cell-playlists .bottom-bar-cell-icon {
+    content: url('assets/bottom_playlist.png');
+}
+#bottom-bar-cell-playlists.is-selected .bottom-bar-cell-icon {
+    content: url('assets/bottom_playlist_selected.png');
+}
+.bottom-bar-cell-icon {
+    display: block;
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bottom-bar-cell-label {
+    font-size: 14px;
+
+    color: #757575;
+}
+.bottom-bar-cell.is-selected .bottom-bar-cell-label {
+    color: #1ed760;
+}

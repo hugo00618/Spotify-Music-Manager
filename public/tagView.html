@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta content="initial-scale=1.0" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.1/lodash.min.js"></script>
+    <script type="text/javascript" src="tagView.js"></script>
+    <script type="text/javascript" src="myUtil.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="tagView.css">
+    <title></title>
+</head>
+
+<body onload="onloadWindow()">
+    <div class="myNgInclude" my-ng-include="titleBar.html"></div>
+    <div class="tag-view-page-content">
+        <div class="tag-view-tag-container">
+            <div id="tag-view-tag" class="tag-cell-bubble" onclick=onclickTagBubble()>&nbsp</div>
+        </div>
+        <label class="section-title tag-view-section-title">Assigned Tracks</label>
+        <div id="tag-view-assigned-playlists-container" class="tag-view-playlists-container">
+            <!-- Assigned playlist cells go here -->
+        </div>
+        <label class="section-title tag-view-section-title">Unassigned Tracks</label>
+        <div id="tag-view-unassigned-playlists-container" class="tag-view-playlists-container">
+            <!-- Unassigned playlist cells go here -->
+        </div>
+
+        <a class="delete-tag-cell deleteTagCell" onclick="onclickDeleteTag()">Delete Tag</a>
+    </div>
+    <div class="myNgInclude" my-ng-include="bottomBar.html"></div>
+</body>
+
+</html>
+<template id="tag-view-playlist-cell-template">
+    <div class="tag-view-playlist-cell tagViewPlaylistCell" onclick="onclickPlaylistCell(event)">
+        <img class="tag-view-playlist-cell-action-button tagViewPlaylistCellActionButton" onclick="onclickPlaylistCellAction(this)" />
+        <img id="tag-view-playlist-cell-thumbnail" class="tag-view-playlist-cell-thumbnail" />
+        <div class="tag-view-playlist-cell-text-container">
+            <label class="tag-view-playlist-cell-title tagViewPlaylistCellTitle">Playlist Name</label>
+            <label class="cell-subtitle tag-view-playlist-cell-subtitle tagViewPlaylistCellSubtitle">Artist</label>
+        </div>
+        <img class="cell-right-icon" src="assets/cell_disclosure_indicator.png" />
+    </div>
+</template>

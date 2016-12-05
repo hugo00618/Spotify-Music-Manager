@@ -1,0 +1,50 @@
+.title-bar {
+    position: relative;
+    z-index: 999;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    text-align: center;
+    background-color: #1ed760;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+.title-bar-button {
+    position: absolute;
+    top: 50%;
+    display: none;
+    transform: translateY(-50%);
+}
+.title-bar-button.left {
+    left: 0;
+    padding-left: inherit;
+}
+.title-bar-button.right {
+    right: 0;
+    padding-right: inherit;
+}
+.title-bar-icon {
+    width: 24px;
+    vertical-align: middle;
+}
+.title-bar-button.left > .title-bar-icon {
+    margin-right: -4px;
+}
+.title-bar-button-label {
+    vertical-align: middle;
+    color: #fff;
+}
+.title-bar-button.bold > .title-bar-button-label {
+    font-weight: 600;
+}
+.title-bar-label {
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 50%;
+    max-height: 30px;
+    white-space: nowrap;
+    letter-spacing: 1.2px;
+    text-overflow: ellipsis;
+    color: #fff;
+}

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta content="initial-scale=1.0" name="viewport">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.1/lodash.min.js"></script>
+    <script type="text/javascript" src="searchView.js"></script>
+    <script type="text/javascript" src="myUtil.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="searchView.css">
+    <title></title>
+</head>
+
+<body onload="onloadWindow()">
+    <!-- Search -->
+    <div class="search-bar-container searchBarContainer">
+        <div class="search-input-container">
+            <div class="search-input-inner-container" onclick="onclickSearchInput()">
+                <input class="my-input search-input searchInput" onblur="onblurSearchInput()" onchange="onchangeSearchInput();" onkeyup="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();" />
+                <div class="search-hint-container searchHintContainer">
+                    <img class="search-hint-icon" src="assets/title_search.png" />
+                    <label class="search-hint-label">Search</label>
+                </div>
+            </div>
+        </div>
+        <a class="search-filter-button" onclick="onclickFilterButton()">
+            <img class="search-filter-icon searchFilterIcon" />
+        </a>
+        <div class="search-view-filter-pane-content-container searchViewFilterPaneContentContainer">
+            <div id="searchFilterSectionTag" class="search-filter-section-container searchFilterSectionContainer">
+                <div class="search-view-cell">
+                    <label class="search-filter-section-title">Tag Filter</label>
+                    <div class="switchery mySwitchery">
+                        <a class="switchery-switch" onclick="onclickSwitch(this)"></a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="search-view-cell selecting-cell selectingCell tag-selecting-cell tagSelectingCell">
+                    <!-- Tag bubble cells go here -->
+                </div>
+            </div>
+            <div id="searchFilterSectionRating" class="search-filter-section-container searchFilterSectionContainer">
+                <div class="search-view-cell">
+                    <label class="search-filter-section-title">Rating Filter</label>
+                    <div class="switchery mySwitchery">
+                        <a class="switchery-switch" onclick="onclickSwitch(this)"></a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="search-view-cell selecting-cell selectingCell rating-cell ratingCell">
+                    <img class="rating-star ratingStar" onclick="setRating(1)" />
+                    <img class="rating-star ratingStar" onclick="setRating(2)" />
+                    <img class="rating-star ratingStar" onclick="setRating(3)" />
+                    <img class="rating-star ratingStar" onclick="setRating(4)" />
+                    <img class="rating-star ratingStar" onclick="setRating(5)" />
+                    <label class="rating-label">or more</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="search-view-content" class="search-view-content">
+        <!-- Track cells go here -->
+    </div>
+    <div class="myNgInclude" my-ng-include="bottomBar.html"></div>
+</body>
+
+</html>
+<!-- Tag bubble cell template -->
+<template id="tagBubbleCellTemplate">
+    <div class="tag-cell-bubble search-tag-cell" onclick="onclickTag(this)"></div>
+</template>
+<!-- Track cell template -->
+<template id="trackCellTemplate">
+    <div class="track-cell trackCell" track-id="" onclick="onclickTrackCell(this)">
+        <img class="track-cell-thumbnail trackCellThumbnail" />
+        <div class="track-cell-text-container">
+            <label class="track-cell-title trackCellTitle">Track Name</label>
+            <label class="cell-subtitle track-cell-subtitle trackCellSubtitle">Track Artist</label>
+        </div>
+        <img class="cell-right-icon" src="assets/cell_disclosure_indicator.png" />
+    </div>
+</template>

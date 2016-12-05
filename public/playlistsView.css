@@ -1,0 +1,49 @@
+.playlists-view-content {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 53px;
+    left: 0;
+    overflow-y: scroll;
+    background-color: #f5f5f5;
+    -webkit-overflow-scrolling: touch;
+}
+.playlists-view-playlists-container {
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+.playlist-cell {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.playlist-cell-thumbnail {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+.playlist-cell-label-container {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.playlist-cell-label-title {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.playlist-cell-label-song-count {
+    font-size: 12px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #757575;
+}

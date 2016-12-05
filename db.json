@@ -1,0 +1,56 @@
+{
+  "tag-colours": [
+    {
+      "id": 1,
+      "name": "red"
+    },
+    {
+      "id": 2,
+      "name": "orange"
+    },
+    {
+      "id": 3,
+      "name": "amber"
+    },
+    {
+      "id": 4,
+      "name": "green"
+    },
+    {
+      "id": 5,
+      "name": "cyan"
+    },
+    {
+      "id": 6,
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "name": "teal"
+    },
+    {
+      "id": 8,
+      "name": "blue"
+    },
+    {
+      "id": 9,
+      "name": "indigo"
+    },
+    {
+      "id": 10,
+      "name": "brown"
+    },
+    {
+      "id": 11,
+      "name": "grey"
+    }
+  ],
+  "user-info": [
+    {
+      "userId": "hugo00618",
+      "id": 1,
+      "tags": "[{\"name\":\"one\",\"colourId\":1,\"tracks\":[\"5UuikgHTxSRFRnC0zXx10i\",\"5rQ2pMP2432li0ugxRa73t\",\"659JGyHxV3AjKJIbO00aED\",\"20R0uJu7lGpqlMgTQ8SyoV\",\"5q5PhDl4HQyG3zXqv4HAWE\"]},{\"name\":\"two\",\"colourId\":3,\"tracks\":[\"6skhKL3IMQYbsn7qrgMcTX\",\"0MYNeFsKpzBHwrJGfWZysV\",\"36NATrgCaO7b1r2aSXFyBY\",\"659JGyHxV3AjKJIbO00aED\",\"20R0uJu7lGpqlMgTQ8SyoV\"]},{\"name\":\"three\",\"colourId\":4,\"tracks\":[\"0GRkmZmPQXAsfuJvUwACy0\",\"6MKeeFKQeA0DNb5eulHDp4\",\"20R0uJu7lGpqlMgTQ8SyoV\",\"35KrMfAdlfZWmoIOlwO74m\"]}]",
+      "tracks": "[{\"id\":\"5UuikgHTxSRFRnC0zXx10i\",\"name\":\"Aqualung\",\"rating\":4},{\"id\":\"6MBZyLisOWTChcevgFqwVr\",\"name\":\"Cross Eyed Mary\"},{\"id\":\"46ITAa2MkDCQQQbVJv1cTN\",\"name\":\"Cheap Day Return\"},{\"id\":\"5RsfvV4oSchEPH6t93C1lR\",\"name\":\"Mother Goose\"},{\"id\":\"7bo2X63U1NpKYMXV1mZFkq\",\"name\":\"Wond'Ring Aloud\"},{\"id\":\"4eswKSdbIeYn0gMwZDuvRM\",\"name\":\"Up To Me\"},{\"id\":\"1pkoB8ZiZymyyIvaZmKElJ\",\"name\":\"My God\"},{\"id\":\"2it4DH8fqcCkSTCmqY5gzk\",\"name\":\"Hymn 43\"},{\"id\":\"1QhqX9moYeL8V4ZnOXirEH\",\"name\":\"Slipstream\"},{\"id\":\"0MYNeFsKpzBHwrJGfWZysV\",\"name\":\"Locomotive Breath\"},{\"id\":\"35KrMfAdlfZWmoIOlwO74m\",\"name\":\"Wind Up\"},{\"id\":\"2uDINz5D5dJpb6iQnd0IYM\",\"name\":\"Lick Your Fingers Clean\"},{\"id\":\"2zQlfgqYJvPkISWFQwWWHs\",\"name\":\"Wind Up - Quad Version\"},{\"id\":\"1YRW7IE2T1W8vhbtaQjRXC\",\"name\":\"Ian Anderson Interview\"},{\"id\":\"5YVFhUCQse2lLzEJoGkX1F\",\"name\":\"December African Rain\"},{\"id\":\"3giDTAzlAm4lZiPpLxEn9W\",\"name\":\"African Sky Blue\"},{\"id\":\"5rQ2pMP2432li0ugxRa73t\",\"name\":\"Digging for Some Words\",\"rating\":4},{\"id\":\"1MYTdxAbffxB5ELWDW3Sb9\",\"name\":\"Journey's Island (Emalonjeni)\"},{\"id\":\"54Og6paO540LcUe2HVwvee\",\"name\":\"Africa (What Made You So Strong)\"},{\"id\":\"20R0uJu7lGpqlMgTQ8SyoV\",\"name\":\"Your Time Will Come\",\"rating\":5},{\"id\":\"65uhzzjlzXPrqvrXI0e6A2\",\"name\":\"Woza Friday\"},{\"id\":\"7qxeOymABID9pysYH0IKXz\",\"name\":\"The Crossing (Osiyeza)\"},{\"id\":\"5q5PhDl4HQyG3zXqv4HAWE\",\"name\":\"Circle of Light\"},{\"id\":\"6gbS4ZSi40s3Vb4OWX3DLw\",\"name\":\"Into the Picture\"},{\"id\":\"5RG8iGJ6K5Ge57hBMBeSDp\",\"name\":\"I Call Your Name\"},{\"id\":\"4e57yKFA1nFjb4cz2fJZ6b\",\"name\":\"Impi\"},{\"id\":\"6skhKL3IMQYbsn7qrgMcTX\",\"name\":\"Great Heart\"},{\"id\":\"3Gs4PNXMqvYcxads8JX3Zq\",\"name\":\"Scatterlings of Africa\"},{\"id\":\"0pb347bbEq3sOrdDi42pM9\",\"name\":\"Cruel Crazy Beautiful World\"},{\"id\":\"2zs9noBmNhyiWIgXkMyElr\",\"name\":\"Asimbonanga\"},{\"id\":\"659JGyHxV3AjKJIbO00aED\",\"name\":\"Wake Up and Rise\"},{\"id\":\"0x0shdoM1oBEdVOQWBzMsc\",\"name\":\"Let Me Be\"},{\"id\":\"2ExP3GBnLWFyrMjjf0IlUC\",\"name\":\"Dance Hall Blues\"},{\"id\":\"4DZnjbBAs6lhv7yX3VaaEp\",\"name\":\"80 Year Old Mooshim\"},{\"id\":\"6MKeeFKQeA0DNb5eulHDp4\",\"name\":\"Why Don’t you Do Right\"},{\"id\":\"5lHwVIr7MMxjtujQpugWBX\",\"name\":\"Going Back\"},{\"id\":\"6XzwksHMt2wZCpmPgCgiR2\",\"name\":\"500 Years O' Blues\"},{\"id\":\"0GRkmZmPQXAsfuJvUwACy0\",\"name\":\"Mama is a Revolutionary\"},{\"id\":\"2yEjKw1iKgWe1ChOjIoWB0\",\"name\":\"Memego\"},{\"id\":\"36NATrgCaO7b1r2aSXFyBY\",\"name\":\"Rebel\"},{\"id\":\"1VwXDQPCwghSOlm5BwWTVA\",\"name\":\"Brighter\"}]"
+    }
+  ]
+}

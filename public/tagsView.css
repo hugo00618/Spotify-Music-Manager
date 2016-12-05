@@ -1,0 +1,118 @@
+.tags-page-content {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 53px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 24px 0;
+    background-color: #f5f5f5;
+    -webkit-overflow-scrolling: touch;
+}
+.new-tag {
+    position: relative;
+    display: block;
+    height: 64px;
+    padding-right: 12px;
+    padding-left: 11px;
+    background-color: #fff;
+}
+.new-tag-icon {
+    width: 28px;
+    margin-right: 5px;
+}
+.tag-cell {
+    position: relative;
+    box-sizing: border-box;
+    height: 72px;
+    padding: 8px 12px;
+    background-color: #fff;
+}
+.tag-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 12px;
+    display: block;
+    height: 1px;
+    content: '';
+    background-color: #aaa;
+}
+.tags-page-content .tag-cell:nth-child(2) {
+    /* first didn't work somehow... */
+    border-top: 1px solid #aaa;
+}
+.tags-page-content .tag-cell:last-child:after {
+    height: 0;
+}
+.tag-cell-colour-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-radius: 26px;
+}
+.tag-cell.red .tag-cell-colour-icon {
+    border: 2px solid #d32f2f; /* 700 */
+    background-color: #f44336;
+}
+.tag-cell.purple .tag-cell-colour-icon {
+    border: 2px solid #7b1fa2;
+    background-color: #9c27b0;
+}
+.tag-cell.indigo .tag-cell-colour-icon {
+    border: 2px solid #303f9f;
+    background-color: #3f51b5;
+}
+.tag-cell.blue .tag-cell-colour-icon {
+    border: 2px solid #0288d1;
+    background-color: #03a9f4;
+}
+.tag-cell.cyan .tag-cell-colour-icon {
+    border: 2px solid #0097a7;
+    background-color: #00bcd4;
+}
+.tag-cell.teal .tag-cell-colour-icon {
+    border: 2px solid #00796b;
+    background-color: #009688;
+}
+.tag-cell.green .tag-cell-colour-icon {
+    border: 2px solid #689f38;
+    background-color: #8bc34a;
+}
+.tag-cell.amber .tag-cell-colour-icon {
+    border: 2px solid #ffa000;
+    background-color: #ffb300;
+}
+.tag-cell.orange .tag-cell-colour-icon {
+    border: 2px solid #f57c00;
+    background-color: #ff9800;
+}
+.tag-cell.brown .tag-cell-colour-icon {
+    border: 2px solid #5d4037;
+    background-color: #795548;
+}
+.tag-cell.grey .tag-cell-colour-icon {
+    border: 2px solid #455a64;
+    background-color: #607d8b;
+}
+.tag-cell-text-container {
+    display: inline-block;
+    max-width: calc(100% - 64px);
+    vertical-align: middle;
+}
+.tag-cell-title {
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+    max-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tag-cell-subtitle {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

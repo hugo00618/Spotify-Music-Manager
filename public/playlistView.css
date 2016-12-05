@@ -1,0 +1,57 @@
+.playlist-view-content {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    bottom: 53px;
+    left: 0;
+    overflow-y: scroll;
+    padding: 24px 0;
+    background-color: #f5f5f5;
+    -webkit-overflow-scrolling: touch;
+}
+.track-cell {
+    position: relative;
+    padding: 12px 12px;
+    background-color: #fff;
+}
+.track-cell:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 12px;
+    display: block;
+    height: 1px;
+    content: '';
+    background-color: #aaa;
+}
+.playlist-view-content > .track-cell:last-child:after {
+    height: 0;
+}
+.track-cell-thumbnail {
+    width: 36px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.track-cell-text-container {
+    display: inline-block;
+    max-width: calc(100% - 72px);
+    vertical-align: middle;
+}
+.track-cell-title {
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 24px;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.track-cell-subtitle {
+    line-height: 18px;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

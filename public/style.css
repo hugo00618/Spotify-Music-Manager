@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Circular;
+    font-weight: 300;
+    font-style: normal;
+    src: url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-light.woff2) format('woff2'),url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-light.woff) format('woff');
+}
+@font-face {
+    font-family: Circular;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-book.woff2) format('woff2'),url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-book.woff) format('woff');
+}
+@font-face {
+    font-family: Circular;
+    font-weight: 500;
+    font-style: normal;
+    src: url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-medium.woff2) format('woff2'),url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-medium.woff) format('woff');
+}
+@font-face {
+    font-family: Circular;
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-bold.woff2) format('woff2'),url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-bold.woff) format('woff');
+}
+@font-face {
+    font-family: Circular;
+    font-weight: 900;
+    font-style: normal;
+    src: url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-black.woff2) format('woff2'),url(https://sp-bootstrap.global.ssl.fastly.net/7.3.0/fonts/circular-black.woff) format('woff');
+}
+* {
+    font-family: Circular, Helvetica, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+body {
+    margin: 0;
+}
+.vertical-center-inner-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    padding: inherit;
+    transform: translateY(-50%);
+}
+.vertical-center-inner-container > * {
+    vertical-align: middle;
+}
+.my-input {
+    padding: 0;
+    border: none;
+}
+.my-input:focus {
+    outline: none;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+    margin-left: 12px;
+    text-transform: uppercase;
+    color: #757575;
+}
+
+/* Bubble Tag Cell */
+.tag-cell-bubble {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 999px;
+}
+.tag-cell-bubble.red {
+    color: #f44336;
+    background-color: #ffcdd2;
+}
+.tag-cell-bubble.purple {
+    color: #9c27b0;
+    background-color: #e1bee7;
+}
+.tag-cell-bubble.indigo {
+    color: #3f51b5;
+    background-color: #c5cae9;
+}
+.tag-cell-bubble.blue {
+    color: #03a9f4;
+    background-color: #b3e5fc;
+}
+.tag-cell-bubble.cyan {
+    color: #00bcd4;
+    background-color: #b2ebf2;
+}
+.tag-cell-bubble.teal {
+    color: #009688;
+    background-color: #b2dfdb;
+}
+.tag-cell-bubble.green {
+    color: #8bc34a;
+    background-color: #dcedc8;
+}
+.tag-cell-bubble.amber {
+    color: #ffb300;
+    background-color: #ffecb3;
+}
+.tag-cell-bubble.orange {
+    color: #ff9800;
+    background-color: #ffe0b2;
+}
+.tag-cell-bubble.brown {
+    color: #795548;
+    background-color: #d7ccc8;
+}
+.tag-cell-bubble.grey {
+    color: #607d8b;
+    background-color: #cfd8dc;
+}
+.tag-cell-bubble.faded {
+    color: #fafafa;
+    background-color: #e0e0e0;
+}
+
+/* Cell */
+.cell-right-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 18px;
+    padding-right: 18px;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+.cell-subtitle {
+    font-size: 14px;
+    color: #757575;
+}
