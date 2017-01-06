@@ -155,7 +155,7 @@ function refreshMyTracks(accessToken, userId, _callback) {
         var myTracks = [];
         var j = 0;
         for (var i = 0; i < playlists.length; i++) {
-            getPlaylist(accessToken, userId, playlists[i]['id'], function(playlist) {
+            getPlaylist(accessToken, playlists[i]['owner']['id'], playlists[i]['id'], function(playlist) {
                 j++;
                 var curTracks = playlist['tracks']['items'];
                 myTracks = myTracks.concat(curTracks);

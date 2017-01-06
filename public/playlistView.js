@@ -14,7 +14,7 @@ var DEFAULT_THUMBNAIL_URL = "assets/playlist_spotify_squared_icon_native_640.png
 // environment.
 (function(exports) {
     var passedData = {};
-    var userId;
+    // var userId;
 
     function getTrackCell(track) {
         var cell = $($('#playlist-view-track-cell-template').html());
@@ -38,9 +38,8 @@ var DEFAULT_THUMBNAIL_URL = "assets/playlist_spotify_squared_icon_native_640.png
         passedData = getDecodedPassedData();
 
         myNgInclude(function() {
-            getUser(passedData['access_token'], function(user) {
-                userId = user['id'];
-                getPlaylist(passedData['access_token'], userId, passedData['playlist_id'], function(playlist) {
+            // getUser(passedData['access_token'], function(user) {
+                getPlaylist(passedData['access_token'], passedData['owner_id'], passedData['playlist_id'], function(playlist) {
                     // title bar
                     $('#title-bar-label').text(playlist['name']);
 
@@ -52,7 +51,7 @@ var DEFAULT_THUMBNAIL_URL = "assets/playlist_spotify_squared_icon_native_640.png
                         $('#playlist-view-content').append(getTrackCell(tracks[i]['track']));
                     }
                 });
-            });
+            // });
 
 
             //bottom bar

@@ -32,7 +32,8 @@ var DEFAULT_PLAYLIST_THUMBNAIL_URL = "assets/playlist_spotify_squared_icon_nativ
 
         var anchorLink = "playlistView.html";
         anchorLink += "?access_token=" + passedData['access_token'];
-        anchorLink += "&playlist_id=" + item.id;
+        anchorLink += "&owner_id=" + item['owner']['id'];
+        anchorLink += "&playlist_id=" + item['id'];
         cellAnchor.attr("href", anchorLink);
         cellThumbnail.attr("src", thumbnailUrl);
         cellTitle.text(item.name);
